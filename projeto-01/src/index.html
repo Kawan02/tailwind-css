@@ -8,7 +8,14 @@
   </head>
   <body class="bg-slate-200">
     <main class="flex flex-col items-center justify-center w-full min-h-screen mx-auto md:flex-row">
-      <section class="w-full flex-1">item 2</section>
+      <section class="w-full flex-1 flex justify-center items-center flex-col p-4">
+        <div class="w-full max-w-xl flex justify-center items-center flex-col gap-4">
+          <img class="w-36 hover:scale-110 duration-300" src="./assets/user.png" alt="Logo do usuario" />
+          <h1 class="text-4xl font-bold mb-7">Login</h1>
+          <input class="w-full p-2 rounded-lg outline-none bg-gray-50 focus:bg-white" type="text" placeholder="Digite o seu email..." />
+          <input class="w-full p-2 rounded-lg outline-none bg-gray-50 focus:bg-white" type="password" placeholder="***********" />
+        </div>
+      </section>
       <section class="hidden w-full flex-1 md:flex">item 3</section>
     </main>
   </body>
