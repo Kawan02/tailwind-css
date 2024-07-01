@@ -576,6 +576,14 @@ video {
   margin-top: 1.75rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -600,6 +608,10 @@ video {
   width: 100%;
 }
 
+.max-w-2xl {
+  max-width: 42rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -610,10 +622,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .flex-1 {
@@ -679,12 +687,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-uber {
-  background-image: url('/src/assets/bguber.png');
-}
-
 .bg-city {
   background-image: url('/src/assets/bg-city.png');
+}
+
+.bg-uber {
+  background-image: url('/src/assets/bguber.png');
 }
 
 .bg-cover {
@@ -738,6 +746,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -746,19 +759,29 @@ video {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -779,24 +802,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.text-stone-800 {
+  --tw-text-opacity: 1;
+  color: rgb(41 37 36 / var(--tw-text-opacity));
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.opacity-80 {
+  opacity: 0.8;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .duration-200 {
@@ -809,10 +829,6 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .hover\:scale-105:hover {
@@ -837,19 +853,32 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;
   }
 
-  .sm\:py-9 {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .sm\:py-11 {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -874,10 +903,5 @@ video {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
